@@ -1,0 +1,146 @@
+.project {
+  margin: size(0.5);
+  margin-bottom: size(1);
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: size(0.5);
+  padding: size(0.5);
+  transition: 0.2s ease-out;
+  background: linear-gradient(180deg, var(--gray-100) 0%, var(--gray-200) 100%);
+  position: relative;
+  overflow: visible;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 1px var(--white);
+
+  .card-header {
+    align-items: start;
+    padding: size(0.25) size(0.5);
+    border-bottom: none;
+  }
+
+  .card-header > .modal-backdrop {
+    margin: 0 auto !important;
+  }
+
+  .select {
+    position: absolute;
+    width: 95%;
+    z-index: 2;
+  }
+
+  // .project_icon {
+  //   width: 70px;
+  //   height: 70px;
+  // }
+
+  .project-money {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .card-body {
+    padding: size(0.25) size(0.5);
+    overflow: visible;
+  }
+
+
+  .project-name {
+    font-size: size(1.5);
+    font-weight: bold;
+  }
+
+
+  .btn-worker {
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--color-darken-cyan);
+    padding: 0;
+    margin-right: size(0.5);
+    position: relative;
+
+  }
+  .icon-close {
+    color: var(--white);
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: size(0.25);
+    transition: 300ms;
+  }
+  .btn-worker:hover .icon-close {
+    opacity: 1;
+  }
+
+  .btn-tech {
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--color-darken-cyan);
+    padding: 0;
+    margin-right: size(0.5);
+    position: relative;
+
+    .desaturate {
+      filter: grayscale(100%);
+    }
+  }
+
+  .project-team, project-techs {
+    margin-bottom: 0;
+
+    //button {
+    //  margin-right: size(0.25);
+    //  margin-left: size(0.25);
+    //}
+  }
+
+  .worker-avatar {
+    border-radius: 2px;
+  }
+
+  .icon-tech {
+    margin-right: 5px;
+  }
+
+  .icon-workers {
+    margin-right: 8px;
+  }
+
+  .btn-add-worker {
+    color: var(--white);
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background-color: var(--color-darken-cyan);
+    
+  }
+
+  .reject {
+    margin: 0 auto;
+    height: 32px;
+    width: 80px;
+  }
+}
+
+.project:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(180deg, var(--white) 0%, var(--gray-100) 100%);
+}
+
+.workers-on-project {
+
+  .icon-tech:before {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+
+  .icon-workers:before {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+}

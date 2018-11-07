@@ -1,0 +1,118 @@
+.selector-title {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+    line-height: 13px;
+    font-size: 11px;
+    color: #999999;
+    .symbol {
+        position: absolute;
+        left: 49px;
+    }
+    .have {
+        position: absolute;
+        left: 197px;
+    }
+    .price {
+        position: absolute;
+        left: 286px;
+    }
+    .change {
+        position: absolute;
+        right: 42px;
+    }
+}
+.selector {
+    position: relative;
+}
+
+.selector-wrapper {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 4px;
+}
+
+.selector-head{
+    border: 0 !important;
+    box-shadow: none;
+    border-radius: 4px;
+}
+.opened-selector {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.opened-selector:last-child {
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.selector-head-opened {
+    .selector-triangle {
+        right: 16px;
+        top: 10px;
+        position: absolute;
+        background-color: var(--color-cyan) !important;
+    }
+}
+
+.selection {
+    width: 100%;
+    height: 48px;
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+    padding: 16px;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    .logo {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 6px;
+        top: 12px;
+    }
+    .name {
+        line-height: 15px;
+        font-size: 13px;
+        position: absolute;
+        left: 48px;
+    }
+    .have {
+        font-weight: bold;
+        line-height: 15px;
+        font-size: 13px;
+        position: absolute;
+        left: 196px;
+    }
+    .price {
+        line-height: 15px;
+        font-size: 13px;
+        position: absolute;
+        left: 284px;
+    }
+    .change {
+        line-height: 15px;
+        font-size: 13px;
+        position: absolute;
+        right: 58px;
+    }
+    .selector-triangle {
+        right: 16px;
+        top: 10px;
+        position: absolute;
+    }
+    .green {
+        color: #71b247;
+    }
+    .red {
+        color: #ff6759;
+    }
+}
+

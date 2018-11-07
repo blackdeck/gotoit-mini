@@ -1,0 +1,263 @@
+:root {
+    width: 100%;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 2px;
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+//====СТИЛИЗАЦИЯ СКРОЛЛА====
+.card-body {
+overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        //background-color: var(--light);
+        width: size(0.5);
+    }
+
+    // &::-webkit-scrollbar-button {
+    //     background-color: transparent;
+    // }
+
+    //&::-webkit-scrollbar-track {
+    //    background-color: var(--light-gray);
+    //}
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-black-030);
+      border-radius: size(0.5);
+    }
+}
+//===========================
+
+.column-buttons {
+    display: flex;
+    margin: 4px;
+    margin-bottom: 8px;
+
+    //& > btn {
+    //    flex: 1 1 50%;
+    //    margin: size(0.5);
+    //}
+    .start-project-btn{
+        width: 100%;
+    }
+}
+
+.hovered {
+    box-shadow: inset 0 0 0 size(0.5) rgba(var(--color-success), 0.5);
+}
+
+//.tab-content {
+//
+//padding: size(1);
+//}
+
+.flex-element {
+    display: flex;
+}
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card{
+    .card-content-center {
+        margin: 8px;
+        //padding: 4px 4px 2px 4px;
+        text-align: center;
+        //height: 100%;
+        display: flex;
+
+        .office-actions{
+            flex-direction: column;
+        }
+
+        h4 {
+            font-weight: bold;
+            margin-top: 12px;
+        }
+
+        .pr-actions button {
+            position:relative;
+            height: 32px;
+            width: 120px;
+            margin-bottom: 26px;
+            margin-top: 16px;
+        }
+
+        .search {
+            margin-top: 16px;
+            height: 32px;
+            width: 172px;
+        }
+        .btn-wrapper{
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+    }
+    .btn-wrapper{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+.office {
+    padding: 32px;
+}
+
+.office-buttons {
+    div {
+        width: 160px;
+        height: 32px;
+    }
+
+    .downgrade_office {
+        width: 180px;
+    }
+}
+
+.small-heading {
+    font-size: 11px;
+    color: rgba(0, 51, 51, 0.6);
+    font-weight: bold;
+}
+
+.office {
+    padding: 8px;
+
+    .column-buttons {
+        display: flex;
+
+    & > button {
+            flex: 1 1 50%;
+            margin: 0 auto;
+        }
+    }
+
+    .office-price {
+        margin-left: 32px;
+        h3 {
+            margin-left: 5px;
+            text-align: center;
+        }
+    }
+
+    h4 {
+        margin-bottom: 16px;
+    }
+
+}
+.office-disabled {
+    opacity: 0.5;
+}
+
+.circle-text {
+    margin-left: 26px;
+    text-align: left;
+
+    h3 {
+        font-weight: bold;
+    }
+}
+
+.counter {
+    width: size(4);
+    height: size(4);
+    left: 50%;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    top: 100%;
+}
+
+.grayscaled {
+    filter: grayscale(100%);
+}
+
+.support {
+    a {
+        color: var(--gray-900);
+    }
+    a:hover {
+        color: var(--color-primary);
+    }
+}
+
+.penalty {
+    font-weight: 700;
+    color: var(--gray-500);
+}
+
+
+.react-confirm-alert-overlay {
+    animation: react-confirm-alert-fadeIn 0.2s 0.2s forwards;
+}
+
+///cursor disabling pointing on text
+
+h1, h2, h3, h4, h5, h6, p, b {
+    cursor: default;
+}
+
+.btn, .letter {
+    h1, h2, h3, h4, h5, h6, p, b {
+        cursor: pointer;
+    }
+}
+
+// cursor points on menu logo
+
+.header {
+    .logo {
+        cursor: pointer;
+    }
+}
+
+.icon-usd {
+    cursor: default;
+}
+
+.worker-skills .progress {
+    cursor: pointer;
+}
+
+.Select, .Select div, .Select input, .Select span {
+    z-index: 3;
+}
+
+.analytics-card {
+    padding: size(2);
+
+    .platform-selector, .kind-selector {
+        margin: 0 auto;
+        width: 160px;
+        padding-bottom: 12px;
+    }
+
+    .project-in-category {
+        margin: 0 auto;
+    }
+}

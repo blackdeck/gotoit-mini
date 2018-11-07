@@ -1,0 +1,52 @@
+.achievements {
+  margin-top: 15px;
+
+  & {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .achievement {
+    border: 2px solid rgba(0, 51, 51, 0.2);
+    border-radius: 8px;
+    margin: 8px 8px;
+    height: 160px;
+    width: 160px;
+    display: 1 0 25%;
+    position: relative;
+    text-align: center;
+
+    h3 {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  .achievement-icon {
+    width: 80px;
+    height: 80px;
+    margin: 32px auto 8px;
+
+    img {
+      border-radius: 8px;
+    }
+  }
+
+  .blackAndWhite {
+    filter: grayscale(100%);
+  }
+}
+
+.achievement-modal {
+  width: 680px;
+  height: 670px;
+  padding-top: 29px;
+
+  .modal-header{
+    h4 {
+      text-align: center;
+    }
+  }
+
+}

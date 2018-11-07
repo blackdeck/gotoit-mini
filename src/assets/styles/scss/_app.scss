@@ -1,0 +1,59 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+
+//====COMMON====================================//
+@import 'app/common/common.scss';
+@import 'app/common/buffer.scss';
+@import 'app/common/icons.scss';
+
+
+//====BLOCKS====================================//
+@import 'app/blocks/layout.scss';
+@import 'app/blocks/dashboard.scss';
+@import 'app/blocks/activity.scss';
+@import 'app/blocks/background.scss';
+@import 'app/blocks/achievements.scss';
+@import 'app/blocks/header.scss';
+@import 'app/blocks/timeline.scss';
+@import 'app/blocks/worker.scss';
+@import 'app/blocks/creation.scss';
+@import 'app/blocks/hire-workers.scss';
+@import "app/blocks/hiring-agency.scss";
+@import "app/blocks/sales-agency.scss";
+@import "app/blocks/sliders";
+@import 'app/blocks/mail.scss';
+@import 'app/blocks/animatedCircles.scss';
+@import 'app/blocks/menu.scss';
+@import 'app/blocks/loans.scss';
+
+
+@import 'app/blocks/project/project.scss';
+@import 'app/blocks/project/project-find.scss';
+@import 'app/blocks/project/project-name.scss';
+@import 'app/blocks/project/project-money.scss';
+@import 'app/blocks/project/deadline-bar.scss';
+@import 'app/blocks/project/project-progress-bar.scss';
+@import 'app/blocks/project/project-reward.scss';
+
+
+@import 'app/blocks/modal/modal.scss';
+@import 'app/blocks/modal/worker-modal.scss';
+@import 'app/blocks/modal/project-modal.scss';
+@import 'app/blocks/modal/project-report.scss';
+@import 'app/blocks/modal/resume-modal.scss';
+@import 'app/blocks/modal/offer-modal.scss';
+@import 'app/blocks/modal/welcome-modal.scss';
+@import 'app/blocks/modal/relations-modal.scss';
+@import 'app/blocks/modal/office-modal.scss';
+@import 'app/blocks/modal/analytics-modal.scss';
+@import 'app/blocks/modal/news-modal.scss';
+@import 'app/blocks/modal/story_offer_modal.scss';
+@import 'app/blocks/modal/help.scss';
+
+//====COMPONENTS====================================//
+@import 'app/blocks/progress-bar.scss';
+@import 'app/blocks/stats-progress-bar.scss';
+@import 'app/blocks/avatar.scss';
+@import 'app/blocks/selector.scss';
+@import 'app/blocks/exchange.scss';

@@ -1,0 +1,16 @@
+.project-money {
+    .project-reward {
+        align-items: center;
+        color: var(--color-green);
+
+        span {
+            margin-right: 2px;
+        }
+    }
+
+    margin-bottom: 0;
+}
+
+.project-penalty {
+    color: var(--gray-500);
+}

@@ -1,0 +1,10 @@
+version: 0.1.0
+files:
+  - url: go-to-it-0.1.0-mac.zip
+    sha512: qt10tAE9U7BUeydYu6GFBLhSfNO4svZlyfSeZi7N84wzF7Xcvy2VYO0AOsbZEM3n9tI8Olkj4kf5L1qZEmneig==
+  - url: go-to-it-0.1.0.dmg
+    sha512: t+Imapb08N2NR4DJ4dkl5W62EuIrc69aj627veTks/37aJJ20ks/6S7kRk/ZijItfwCzNx90Sr4fgZlm5ozMOw==
+    size: 107552449
+path: go-to-it-0.1.0-mac.zip
+sha512: qt10tAE9U7BUeydYu6GFBLhSfNO4svZlyfSeZi7N84wzF7Xcvy2VYO0AOsbZEM3n9tI8Olkj4kf5L1qZEmneig==
+releaseDate: '2018-10-08T14:59:27.422Z'

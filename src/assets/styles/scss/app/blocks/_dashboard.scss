@@ -1,0 +1,61 @@
+.dashboard {
+    display: flex;
+    padding: size(0.5);
+    //height: calc(100% - 74px);
+    max-width: 1400px;
+    margin: auto;
+
+    .workers,
+    .projects {
+        height: 100%;
+        max-height: 88vh;
+        padding: size(0.25);
+        overflow-y: visible;
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(30px);
+        border-radius: size(1);
+        border: 2px solid transparent;
+
+        &-start-stage {
+            opacity: 0;
+        }
+
+        &::-webkit-scrollbar {
+            //background-color: var(--light);
+            width: size(0.5);
+        }
+
+        // &::-webkit-scrollbar-button {
+        //     background-color: transparent;
+        // }
+
+        //&::-webkit-scrollbar-track {
+        //    background-color: var(--light-gray);
+        //}
+
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--color-black-030);
+            border-radius: size(0.5);
+        }
+    }
+
+    .workers {
+        width: 33%;
+    }
+
+    .activity {
+        width: 66%;
+        height: 80vh;
+        margin: 0 size(0.5);
+    }
+
+    .projects {
+        width: 33%;
+        //overflow: visible;
+        .text-center {
+          color: var(--gray-100);
+        }
+    }
+
+
+}

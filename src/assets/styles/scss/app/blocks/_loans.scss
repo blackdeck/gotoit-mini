@@ -1,0 +1,22 @@
+.loans {
+  padding: size(2);
+
+  .credit-options {
+    justify-content: space-between;
+
+    .option-item {
+      align-items: center;
+    }
+  }
+
+  .card {
+    padding: size(2);
+
+    .text-block {
+      align-items: center;
+    }
+    .filament {
+      margin-top: 8px;
+    }
+  }
+}

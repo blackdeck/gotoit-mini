@@ -1,0 +1,514 @@
+
+.btn {
+  font-size: 14px;
+  padding: 2px 16px;
+  line-height: 2;
+  color: var(--color-text-secondary);
+  letter-spacing: 1px;
+  border-radius: 4px;
+  background-color: #fff;
+  border-color: var(--color-divider);
+  outline: none !important;
+  transition: 0.2s linear;
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  text-shadow: 0 -1px 3px rgba(0, 0, 0, 0.16);
+
+  border: none !important;
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.0),
+    inset 0 0 20px rgba(255, 255, 255, 0.0),
+    inset 0 -1px rgba(0,0,0,0.2),
+    inset 0 -1px 3px rgba(0, 0, 0, 0.1),
+    inset 0 1px rgba(255, 255, 255, 0.3);
+
+
+  &:hover {
+    cursor: pointer;
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.4),
+      inset 0 0 20px rgba(255, 255, 255, 0.1),
+      inset 0 0 20px rgba(255, 255, 255, 0.1),
+      inset 0 -2px rgba(0,0,0,0.2),
+      inset 0 -2px 3px rgba(0,0,0,0.1);
+  }
+
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    box-shadow:
+      inset 0 0 30px rgba(0,0,0, 0.2),
+      inset 0 1px 2px rgba(0,0,0, 0.2) !important;
+  }
+
+}
+
+.btn-bold {
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.btn-manage {
+  color: var(--white);
+  padding-top: size(0.5);
+  padding-bottom: size(0.5);
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  font-size: 9px;
+  padding: 3px 6px;
+  line-height: calc(var(--line-height-xs) - 2px);
+
+  .project &,
+  .worker & {
+    opacity: 0;
+  }
+
+  .project:hover &, .worker:hover & {
+    opacity: 1;
+  }
+}
+
+
+
+
+//-----------------------------------------------------------------
+// Button sizes
+//
+.btn-group-xs > .btn,
+.btn-xs {
+  font-size: 10px;
+  padding: 0 size(1);
+  &.btn-bold {
+    font-size: 9px;
+  }
+}
+
+.btn-group-sm > .btn,
+.btn-sm {
+  font-size: 12px;
+  padding: 4px 12px;
+  line-height: var(--line-height-sm);
+  &.btn-bold {
+    font-size: 11px;
+  }
+}
+
+.btn-group-lg > .btn,
+.btn-lg {
+  font-size: 15px;
+  padding: 7px 20px;
+  line-height: var(--line-height-lg);
+  &.btn-bold {
+    font-size: 14px;
+  }
+}
+
+// Consistent width
+.btn-w-xs { width: var(--width-cons-xs); }
+.btn-w-sm { width: var(--width-cons-sm); }
+.btn-w-md { width: var(--width-cons-md); }
+.btn-w-lg { width: var(--width-cons-lg); }
+.btn-w-xl { width: var(--width-cons-xl); }
+
+
+
+
+
+//-----------------------------------------------------------------
+// Border modifiers
+//
+.btn-round {
+  border-radius: 10rem;
+}
+
+
+
+
+
+//-----------------------------------------------------------------
+// Button variations
+//
+.btn-primary   { @include btn-colors(var(--color-primary), 8%); }
+.btn-success   { @include btn-colors(var(--color-success), 3%); }
+.btn-info      { @include btn-colors(var(--color-info), 6%); }
+.btn-warning   { @include btn-colors(var(--color-warning), 5%); }
+.btn-danger    { @include btn-colors(var(--color-danger), 5%); }
+
+
+.btn-secondary {
+  color: var(--color-text) !important;
+  @include btn-colors(var(--color-secondary), 3%);
+}
+
+.btn-link {
+  color: var(--color-info);
+  font-weight: 500;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: var(--color-secondary);
+  }
+}
+
+.btn-light {
+  background-color: var(--color-bg-lightest);
+  border-color: var(--color-divider);
+  color: var(--color-text-secondary);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-bg-lighter);
+    color: var(--color-text);
+  }
+
+
+  &:active,
+  &.active,
+  .show > &.dropdown-toggle {
+    background-color: var(--color-bg-lighter);
+    color: var(--color-text);
+  }
+
+}
+
+
+
+// Extended colors
+.btn-purple     { @include btn-colors(var(--color-purple), 5%); }
+.btn-pink       { @include btn-colors(var(--color-pink), 4%); }
+.btn-cyan       { @include btn-colors(var(--color-cyan), 8%); }
+.btn-yellow     { @include btn-colors(var(--color-yellow), 8%); }
+.btn-brown      { @include btn-colors(var(--color-brown), 5%); }
+.btn-dark       { @include btn-colors(var(--color-dark), 5%); }
+
+
+// Social media colors
+@each $name, $color in $social-colors {
+  .btn-#{$name} {
+    @include btn-colors($color, 8%);
+  }
+}
+
+
+
+
+
+//-----------------------------------------------------------------
+// Outline buttons
+//
+.btn-primary-outline   { @include btn-outline(var(--color-primary), 8%); }
+.btn-success-outline   { @include btn-outline(var(--color-success), 6%); }
+.btn-info-outline      { @include btn-outline(var(--color-info), 6%); }
+.btn-warning-outline   { @include btn-outline(var(--color-warning), 5%); }
+.btn-danger-outline    { @include btn-outline(var(--color-danger), 5%); }
+.btn-secondary-outline {
+  @include btn-outline(var(--color-secondary), 3%);
+}
+
+// Separated class
+.btn-outline.btn-primary   { @include btn-outline(var(--color-primary), 8%); }
+.btn-outline.btn-success   { @include btn-outline(var(--color-success), 6%); }
+.btn-outline.btn-info      { @include btn-outline(var(--color-info), 6%); }
+.btn-outline.btn-warning   { @include btn-outline(var(--color-warning), 5%); }
+.btn-outline.btn-danger    { @include btn-outline(var(--color-danger), 5%); }
+.btn-outline.btn-secondary {
+  @include btn-outline(var(--color-secondary), 3%);
+}
+
+.btn-outline.btn-light      { @include btn-outline(#fff, 5%); }
+.btn-outline.btn-purple     { @include btn-outline(var(--color-purple), 5%); }
+.btn-outline.btn-pink       { @include btn-outline(var(--color-pink), 4%); }
+.btn-outline.btn-cyan       { @include btn-outline(var(--color-cyan), 8%); }
+.btn-outline.btn-yellow     { @include btn-outline(var(--color-yellow), 8%); }
+.btn-outline.btn-brown      { @include btn-outline(var(--color-brown), 5%); }
+.btn-outline.btn-dark       { @include btn-outline(var(--color-dark), 5%); }
+
+
+.btn-outline.btn-light:hover {
+  color: var(--color-text);
+}
+
+
+// Social media colors
+@each $name, $color in $social-colors {
+  .btn-outline.btn-#{$name} {
+    @include btn-outline($color, 8%);
+  }
+}
+
+
+//-----------------------------------------------------------------
+// Labled buttons
+//
+.btn-label {
+  position: relative;
+  padding-left: calc(var(--height-md) + 16px);
+  overflow: hidden;
+
+  label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: var(--height-md);
+    line-height: inherit;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(0,0,0,0.1);
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+
+  &.btn-label-right {
+
+  }
+
+  // Sizes
+  &.btn-xs {
+    padding-left: calc(var(--height-xs) + 8px);
+
+    label {
+      width: var(--height-xs);
+    }
+  }
+
+  &.btn-sm {
+    padding-left: calc(var(--height-sm) + 12px);
+
+    label {
+      width: var(--height-sm);
+    }
+  }
+
+  &.btn-lg {
+    padding-left: calc(var(--height-lg) + 16px);
+
+    label {
+      width: var(--height-lg);
+    }
+  }
+}
+
+
+
+
+
+//-----------------------------------------------------------------
+// Floating buttons
+//
+.btn-float {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  border-radius: 100%;
+  box-shadow: 0 6px 10px rgba(0,0,0,.15);
+
+  &.btn-sm {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  &:active {
+
+  }
+}
+
+
+
+
+
+//-----------------------------------------------------------------
+// Button icon
+//
+.btn-sq,
+.btn-square {
+  padding: 5px;
+  width: var(--height-md);
+  height: var(--height-md);
+
+  &.btn-lg {
+    width: var(--height-lg);
+    height: var(--height-lg);
+  }
+
+  &.btn-sm {
+    width: var(--height-sm);
+    height: var(--height-sm);
+  }
+
+  &.btn-xs {
+    width: var(--height-xs);
+    height: var(--height-xs);
+  }
+}
+
+
+
+
+
+//-----------------------------------------------------------------
+// Button pure
+//
+.btn-pure {
+  background-color: transparent !important;
+  border-color: transparent !important;
+
+  @each $name, $color in $colors {
+    &.btn-#{$name} {
+      @include btn-pure($color);
+    }
+  }
+
+  // Social media colors
+  @each $name, $color in $social-colors {
+    &.btn-#{$name} {
+      @include btn-pure($color);
+    }
+  }
+
+}
+
+
+
+
+
+//-----------------------------------------------------------------
+// Button flat
+//
+.btn-flat {
+  position: relative;
+  font-size: 13px;
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  background-color: var(--color-bg-lightest);
+  border: none;
+  letter-spacing: 1px;
+  border-radius: 0;
+
+  &:hover {
+    background-color: var(--color-bg-lighter);
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  circle {
+    fill: rgba(255,255,255,0.3);
+  }
+
+  @each $name, $color in $colors {
+    &.btn-#{$name} {
+      color: $color;
+
+      circle {
+        fill: rgba($color,0.1);
+      }
+    }
+  }
+  &.btn-secondary {
+    color: var(--color-text-light);
+  }
+
+  // Social media colors
+  @each $name, $color in $social-colors {
+    &.btn-#{$name} {
+      color: $color;
+
+      circle {
+        fill: rgba($color,0.1);
+      }
+    }
+  }
+
+}
+
+
+
+
+
+//-----------------------------------------------------------------
+// Multiline
+//
+.btn-multiline {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+
+
+//-----------------------------------------------------------------
+// Button group
+//
+.btn-group,
+.btn-group-vertical {
+  vertical-align: initial;
+}
+
+
+.btn-group {
+  .btn i {
+    vertical-align: middle;
+  }
+}
+
+
+.btn-group-vertical>.btn:first-child:not(:last-child) {
+  border-top-right-radius: 2px;
+}
+
+.btn-group-vertical>.btn:last-child:not(:first-child) {
+  border-bottom-left-radius: 2px;
+}
+
+.btn-spacer .btn+.btn {
+  margin-left: 8px;
+}
+
+
+
+// Justified
+//
+.btn-group-justified {
+  display: flex;
+  justify-content: space-between;
+
+  .btn {
+    width: 100%;
+  }
+}
+
+
+
+// Round
+//
+.btn-group-round {
+
+  .btn:first-child {
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+  }
+
+  .btn:last-child {
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+  }
+}

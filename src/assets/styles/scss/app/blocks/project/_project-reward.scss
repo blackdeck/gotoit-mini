@@ -1,0 +1,19 @@
+.project-reward-report {
+  display: flex;
+  padding-top: 20px;
+
+  .reward-text {
+    color: var(--gray-500);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .reward-number {
+    color: #71B247;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    margin-right: 4px;
+  }
+}

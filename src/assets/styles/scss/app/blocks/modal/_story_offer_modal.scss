@@ -1,0 +1,189 @@
+.story-offer-modal {
+  position: relative;
+
+  .modal-header {
+    color: var(--white);
+    background-image:
+            url("~assets/images/modal/offer-modal-bg.png"),
+            linear-gradient(180deg, #2E99E6 50%, #2483B3 100%);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom;
+    padding: size(1);
+    position: relative;
+    height: size(12);
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .project-avatar {
+    width: size(12);
+    height: size(12);
+    left: 50%;
+    position: absolute;
+    overflow: hidden;
+    border-radius: size(1);
+    transform: translate(-50%, -50%);
+    top: 100%;
+  }
+  .customer {
+    position: absolute;
+    width: 200px;
+    height: 240px;
+    background-color: white;
+    border-radius: 16px;
+    z-index: 1000;
+    left: -224px;
+    top: 0;
+    padding: 20px;
+    .avatar {
+        width: 160px;
+        background-color: #C4C4C4;
+        height: 160px;
+        position: relative;
+        & > img {
+          position: absolute;
+        }
+    }
+    .name {
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 8px;
+
+    }
+  }
+
+  .modal-body {
+    padding-top: size(9);
+    padding-bottom: size(7);
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+  }
+
+  .icon-star, .icon-star-border {
+    font-size: 24px;
+    margin-right: 28px;
+  }
+
+
+  .salary {
+    font-weight: bold;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .reward-container {
+    width: 50%;
+    margin-left: 8px;
+    .reward {
+      margin-top: 10px;
+      margin-left: 2px;
+      font-size: 11px;
+      opacity: 0.6;
+      margin-bottom: 12px;
+    }
+  }
+  .description-container {
+    margin-left: 55px;
+    width: 40%;
+    float: left;
+    .description {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #000000;
+      text-align: left;
+      opacity: 0.6;
+    }
+  }
+  .title {
+    font-size: 11px;
+    color: #000000;
+    opacity: 0.6;
+    margin: 6px;
+  }
+  .control-container {
+    width: 50%;
+    float: right;
+    .description {
+      margin-top: 24px;
+      font-size: 11px;
+      opacity: 0.6;
+      text-align: center;
+    }
+  }
+  .quantity {
+    font-size: 32px;
+  }
+
+  .stats-column {
+    font-size: 13px;
+    font-weight: bold;
+    width: 48px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 31px 0;
+  }
+
+  .stats-row {
+    margin-top: 15px;
+  }
+  .stats-bar {
+    margin: auto;
+  }
+
+  .project-heading {
+    font-weight: bold;
+    padding-bottom: size(2);
+  }
+
+  .btn {
+    width: 30vh!important;
+    height: 40px!important;
+    margin: 0 8px;
+  }
+
+  .hired {
+    margin-top: 38px;
+  }
+
+  .skills-circle  {
+    font-weight: bold;
+    width: 48px;
+  }
+
+  .expired {
+    font-weight: bold;
+    margin-top: 24px;
+    color: #FF6759;
+    font-size: 24px;
+  }
+
+  .taken {
+    margin-top: 24px;
+    font-weight: bold;
+    font-size: 24px;
+    opacity: 0.6;
+  }
+
+
+  .penalty {
+    font-weight: 700;
+    color: var(--gray-500);
+  }
+
+  .icon-usd, .icon-usd-penalty {
+    padding-left: 5px;
+
+  }
+
+}
+
+

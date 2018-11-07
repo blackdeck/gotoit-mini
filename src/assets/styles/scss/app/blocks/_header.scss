@@ -1,0 +1,97 @@
+.header {
+  font-size: size(1.5);
+  height: size(4);
+  color: #333;
+
+
+  .topbar {
+    flex-wrap: nowrap;
+  }
+
+  .sound-btn {
+    width: 24px;
+    height: 24px;
+    fill: #333;
+    transition: 300ms;
+    margin-bottom: 3px;
+    cursor: pointer;
+  }
+  .sound-btn:hover {
+    width: 22px;
+    height: 22px;
+    fill: #2E99E5;
+    opacity: 1;
+  }
+
+  //.logo {
+  //    margin-right: size(1);
+  //}
+
+  .game-time {
+    padding: 0 size(2);
+
+    span:nth-child(1) {
+      display: inline-block;
+      width: size(7);
+      font-weight: bold;
+    }
+
+    span:nth-child(2) {
+      display: inline-flex;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: bold;
+      width: size(21);
+      height: size(2.5);
+      border-radius: size(0.5);
+      background-color: rgba(0, 0, 0, 0.2);
+      box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+      margin-left: size(1);
+    }
+  }
+
+  .speed-control {
+    letter-spacing: -4px;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    color: #333;
+  }
+
+  .time-controls {
+    display: flex;
+  }
+
+  .topbar-btn {
+    border-radius: 25% / 50%;
+
+    &.active {
+      background-color: var(--color-primary);
+      color: var(--white);
+      -webkit-text-fill-color: var(--white);
+    }
+  }
+
+  .topbar-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-account-balance-wallet {
+    margin-right: 4px;
+  }
+  .icon-btc, .icon-usd {
+    font-size: size(2.5);
+  }
+  .icon-usd-techs {
+    font-size: size(1);
+  }
+
+  &-start-stage {
+    opacity: 0;
+  }
+}

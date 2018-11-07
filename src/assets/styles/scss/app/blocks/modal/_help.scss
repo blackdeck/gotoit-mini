@@ -1,0 +1,26 @@
+.help-modal {
+  overflow-y: scroll !important;
+  width: 85% !important;
+  max-width: 100% !important;
+
+  .help-modal-inner {
+    overflow-y: scroll;
+    padding: 0 size(6) 0 size(6);
+
+    .legend {
+      a:hover {
+        color: var(--color-primary);
+
+      }
+    }
+
+    h2 {
+      margin-top: 12px;
+    }
+
+    h3 {
+      margin-top: 48px;
+      margin-bottom: 24px;
+    }
+  }
+}

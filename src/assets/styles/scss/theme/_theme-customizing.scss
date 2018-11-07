@@ -1,0 +1,51 @@
+.container-fluid {
+  padding-right: size(0.5);
+  padding-left: size(0.5);
+}
+
+.main-container {
+  min-height: auto !important;
+  padding-top: size(0.5);
+  padding-bottom: size(0.5);
+  margin-top: size(6);
+  height: calc(100vh - 80px);
+}
+
+.card {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: size(0.5);
+  margin-bottom: size(2);
+}
+
+.card-body,
+.card-header,
+.modal-body,
+.modal-header {
+  padding: size(2);
+}
+
+.topbar {
+  height: 32px;
+  flex-wrap: wrap;
+  background: linear-gradient(180deg, #FFF, rgba(255, 255, 255, 0.8));
+}
+
+.topbar-btn {
+  line-height: 32px;
+  background-color: transparent;
+  color: #333;
+}
+
+.fa-plus {
+  vertical-align: middle;
+}
+
+body .topbar + .main-container,
+body .topbar + main {
+  padding-top: size(1);
+}
+
+.badge-pill {
+  font-size: 70%;
+  vertical-align: top;
+}

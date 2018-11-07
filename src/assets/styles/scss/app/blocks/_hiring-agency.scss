@@ -1,0 +1,51 @@
+.title {
+  margin: size(2) auto;
+  color: #fff;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.skill-draw {
+  &-design {
+    color: #FF954C;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+  }
+
+  &-program {
+    color: #BB66CC;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+  }
+
+  &-manage {
+    color: #3DCCCC;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+  }
+
+  &-salary {
+    color: #81CC52;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+  }
+
+  &-size {
+    color: #333333;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+  }
+}
+
+.hiring-text {
+  padding-bottom: 24px;
+}
+
+.stats-slider {
+  padding-bottom: 24px;
+}

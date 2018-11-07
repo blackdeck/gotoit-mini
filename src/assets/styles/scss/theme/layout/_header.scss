@@ -1,0 +1,36 @@
+
+
+.header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 44px;
+  background-size: cover;
+  background-position: center center;
+
+  > .container {
+    margin-bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    //width: 100%; // This may cause problem
+
+    .header-info,
+    .header-action,
+    .header-bar {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &,
+  &.bg-img {
+    z-index: 2;
+  }
+}
+

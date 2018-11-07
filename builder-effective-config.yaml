@@ -1,0 +1,20 @@
+directories:
+  output: ./
+  buildResources: ./build
+electronVersion: 1.6.15
+appId: go-to-it
+extends: null
+files:
+  - from: ./electron
+    to: ./
+    filter:
+      - index.js
+  - from: ./build
+    to: ./
+  - from: ./
+    to: ./
+    filter:
+      - package.json
+linux:
+  target: deb
+  maintainer: BlackDeckCrew

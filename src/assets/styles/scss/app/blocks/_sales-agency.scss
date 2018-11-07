@@ -1,0 +1,33 @@
+.skill-draw {
+  &-design {
+    color: #FF954C;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+  }
+
+  &-program {
+    color: #BB66CC;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+  }
+
+  &-manage {
+    color: #3DCCCC;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+  }
+
+  &-size {
+    color: #333333;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+  }
+}
+
+.sales-text {
+  padding-bottom: 24px;
+}
