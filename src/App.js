@@ -91,20 +91,6 @@ class App extends Component {
     }
 
     componentDidMount() {
-        let locale = this.state.data.language ? this.state.data.language : "en";
-        this.setState({ initDone: true });
-        if (!this.state.data.game_paused) this.playGame();
-        document.addEventListener("contextmenu", function(e) {
-            //e.preventDefault();
-            e.target.click();
-        });
-
-        let openMenu = {};
-        openMenu.do = this.openMenu;
-        document.addEventListener("keydown", function(e) {
-            if (e.key === "Escape") openMenu.do();
-        });
-
         if (greenworks.init()) console.log("Steam API has been initalized.");
     }
 
